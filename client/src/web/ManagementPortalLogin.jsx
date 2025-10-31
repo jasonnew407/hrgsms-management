@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import morenaLogo from '../assets/new_logo.png';
+import { Navigate } from 'react-router-dom';
 
 const ManagementPortalLogin = () => {
     const [email, setEmail] = useState('');
@@ -9,6 +10,7 @@ const ManagementPortalLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Login submitted:', { email, password });
+        <Navigate to="/admin/branch-manager-dashboard" />
         // Add your login logic here
     };
 
