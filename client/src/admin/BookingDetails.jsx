@@ -5,7 +5,7 @@ import Sidebar from '../components/branch manager/Sidebar.jsx';
 import axios from 'axios';
 
 const HOTEL_ID = 1;
-const API = '/api/reservations';
+const API = 'https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/reservations';
 
 const BookingsManagement = () => {
   const [bookings, setBookings] = useState([]);
