@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import morenaLogo from '../assets/new_logo.png';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ManagementPortalLogin = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Login submitted:', { email, password });
-        <Navigate to="/admin/branch-manager-dashboard" />
+         if (email === "maneesha@gmail.com" && password === "test1234") {
+      navigate('/admin/branch-manager-dashboard'); // ✅ This triggers navigation
+    } else {
+      alert("Invalid email or password!");
+    }
         // Add your login logic here
     };
 
