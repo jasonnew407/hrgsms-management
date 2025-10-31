@@ -49,7 +49,7 @@ const WebFooter = () => {
                     <div>
                         <h3 className="font-display text-lg font-bold mb-4">Follow Us</h3>
                         {socialLinksFooter}
-                        <a className="mt-6 inline-block bg-white/10 hover:bg-white/20 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors w-full text-center" href="#">
+                        <a className="mt-6 inline-block bg-white/10 hover:bg-white/20 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors w-full text-center" href="/management-portal-login">
                             Staff/Management Portal
                         </a>
                     </div>
