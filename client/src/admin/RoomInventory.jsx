@@ -40,7 +40,7 @@ const RoomInventory = () => {
     const getRoomInventory = async () => {
       setLoading(true);
       try {
-        const { data: res } = await axios.get('/api/rooms/getAllRooms');
+        const { data: res } = await axios.get('https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/rooms/getAllRooms');
 
      if (res.success) {
       const inventory = res.data.map(room => ({
@@ -149,7 +149,7 @@ const RoomInventory = () => {
     if (modalMode === 'add') {
       setRooms([...rooms, { ...formData, id: rooms.length + 1}]);
       try{
-        const res = await axios.post('/api/rooms/addRoom', {
+        const res = await axios.post('https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/rooms/addRoom', {
         ...formData,
         hotel_id: 1
         });
@@ -171,7 +171,7 @@ const RoomInventory = () => {
     } else {
       setRooms(rooms.map(r => r.id === selectedRoom.id ? { ...r, ...formData } : r));
       try{
-        const res = await axios.put('/api/rooms/updateRoom', {
+        const res = await axios.put('https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/rooms/updateRoom', {
         ...formData,
         });
       if(res.data.success === true){
@@ -198,7 +198,7 @@ const RoomInventory = () => {
     if (window.confirm('Are you sure you want to delete this room?')) {
       setRooms(rooms.filter(r => r.id !== id));
         try{
-          const res = await axios.delete('/api/rooms/deleteRoom', { data: { room_id: id } });
+          const res = await axios.delete('https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/rooms/deleteRoom', { data: { room_id: id } });
           if(res.data.success === true){
              window.alert('Room deleted successfully');
           } else {
