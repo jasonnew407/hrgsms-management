@@ -4,7 +4,7 @@ import Header from '../components/branch manager/Header.jsx';
 import Sidebar from '../components/branch manager/Sidebar.jsx';
 import axios from 'axios';
 
-const staffAPI = "/api/staff"
+const staffAPI = "https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/staff"
 
 const StaffManagement = () => {
   const [staff, setStaff] = useState([]);
