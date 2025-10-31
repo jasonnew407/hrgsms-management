@@ -24,7 +24,7 @@ const ServiceCatalogManagement = () => {
     { id: 2, name: 'Sarah Johnson', role: 'Server', available: true },
    ]);
 
-   useEffect(() => {
+    useEffect(() => {
   console.log("Available Staff State Changed:", availableStaff);
 }, [availableStaff]);
 
@@ -88,6 +88,7 @@ const ServiceCatalogManagement = () => {
     }
   ])
     }
+  }
 
 const fetchServiceStaff = async () => {
   try{
@@ -117,8 +118,7 @@ const fetchServiceStaff = async () => {
   fetchServices();
   fetchServiceStaff();
 }
-  
-}, []);
+, []);
 
 
 
