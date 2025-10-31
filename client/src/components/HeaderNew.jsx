@@ -92,7 +92,7 @@ const HeaderNew = ({
           />
           <div className="text-left hidden md:block">
             <div className="font-medium text-gray-800 dark:text-white text-sm">John Doe</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Downtown Branch</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">Midigama Branch</div>
           </div>
           <ChevronDown 
             className={`w-5 h-5 text-gray-500 dark:text-gray-400 transition-transform hidden sm:block ${
