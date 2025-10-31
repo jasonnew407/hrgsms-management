@@ -60,33 +60,7 @@ const ServiceCatalogManagement = () => {
       console.log(error);
     }finally {
       setData(true);
-      setServices([
-        {
-      id: 1,
-      name: 'Room Service',
-      description: 'In-room dining and beverage service',
-      category: 'Dining',
-      price: 15.00,
-      duration: '30 min',
-      active: true,
-      assignedStaff: [
-        { id: 1, name: 'Sarah Johnson', role: 'Server' },
-        { id: 2, name: 'Michael Chen', role: 'Server' }
-      ]
-    },
-    {
-      id: 2,
-      name: 'Laundry Service',
-      description: 'Professional cleaning and pressing',
-      category: 'Housekeeping',
-      price: 25.00,
-      duration: '24 hrs',
-      active: true,
-      assignedStaff: [
-        { id: 3, name: 'Emily Rodriguez', role: 'Laundry Staff' }
-      ]
-    }
-  ])
+      
     }
   }
 
