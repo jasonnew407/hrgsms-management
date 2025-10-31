@@ -7,7 +7,7 @@ import Header from '../components/branch manager/Header.jsx';
 
 
 const HOTEL_ID = 1;   
-const API        = '/api/services';   
+const API        = 'https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/services';   
 
 
 
