@@ -13,7 +13,7 @@ import axios from 'axios';
 
 
 const hotel_id = 1; // Example hotel/branch ID
-const dashboardApiBaseUrl = '/api/dashboard';
+const dashboardApiBaseUrl = 'https://backendproject-hndhecg3c5g3avf8.southindia-01.azurewebsites.net/api/dashboard';
 
 
 const BranchManagerDashboard = () => {
