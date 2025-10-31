@@ -24,7 +24,6 @@ const Sidebar = ({
     { icon: Bed, label: 'Room Availability', active: false },
     { icon: KeyRound, label: 'Check-in / Check-out', active: false },
     { icon: Bell, label: 'Guest Services & Billing', active: false },
-    { icon: BarChart3, label: 'Reporting', active: false },
     { icon: Settings, label: 'System Settings', active: false },
     { icon: Users, label: 'User Management', active: false },
   ];
